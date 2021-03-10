@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="cont" id="cont">
+      <h2>Calcolo il prezzo del tuo biglietto</h2>
+      <div class="price-cont">
+        <div class="input-cont">
+          <div class="input">
+            <label for="name">Nome e cognome</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div class="input">
+            <label for="km">Distanza da percorrere</label>
+            <input type="text" id="km" name="km">
+          </div>
+          <div class="input">
+            <label for="age">La tua fascia di età</label>
+            <select class="" id="age" name="years">
+              <option value="0">Seleziona</option>
+              <option value="1">Minorenne</option>
+              <option value="2">Maggiorenne</option>
+              <option value="3">Over 65</option>
+            </select>
+          </div>
+        </div>
+        <div class="button-cont">
+          <input type="button" id="generate" value="Genera">
+          <input type="button" id="cancel" value="Annulla">
+        </div>
+      </div>
+      <h2>Calcolo il prezzo del tuo biglietto</h2>
+      <div class="table-cont">
+        <h3>Dettagli passeggeri</h3>
+        <table>
+          <tr>
+            <th>Nome passeggero</th>
+            <th>Offerta</th>
+            <th>Carrozza</th>
+            <th>Codice CP</th>
+            <th>Costo biglietto</th>
+          </tr>
+          <tr>
+            <td id="passenger"></td>
+            <td id="offer"></td>
+            <td id="carriage"></td>
+            <td id="client"></td>
+            <td id="finalPrice"></td>
+          </tr>
+        </table>
+        <input type="button" name="" value="Acquista">
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
