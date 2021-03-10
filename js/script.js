@@ -14,7 +14,6 @@ generateBtn.addEventListener('click', function(){
   var km = document.getElementById('km').value;
   var age = document.getElementById('age').value;
 
-
   var price = km * 0.21;
 
   if (name && km && age){
@@ -51,10 +50,14 @@ generateBtn.addEventListener('click', function(){
 
 cancelBtn.addEventListener('click', function(){
 
+  document.getElementById('name').value = '';
+  document.getElementById('km').value = '';
+  document.getElementById('age').value = '';
+
   passenger.innerHTML = '';
   offer.innerHTML = '';
   carriage.innerHTML = '';
   clientCode.innerHTML = '';
   finalPrice.innerHTML = '';
-  
+
 });
